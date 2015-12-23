@@ -1,41 +1,40 @@
+
 'Lelesys.Plugin.Faq:Container':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Faq Container'
     group: structure
-    inlineEditable: TRUE
-    icon: 'icon-list'
+    inlineEditable: true
+    icon: icon-list
   childNodes:
     items:
       type: 'TYPO3.Neos:ContentCollection'
-
 'Lelesys.Plugin.Faq:Category':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Faq Category'
     group: structure
-    inlineEditable: TRUE
-    icon: 'icon-tag'
+    inlineEditable: true
+    icon: icon-tag
   properties:
     title:
       type: string
-      translatable: TRUE
+      translatable: true
       defaultValue: 'Enter Category Title'
       ui:
-        inlineEditable: TRUE
+        inlineEditable: true
   childNodes:
     items:
       type: 'TYPO3.Neos:ContentCollection'
-
 'Lelesys.Plugin.Faq:Question':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
-    label: 'Faq'
+    label: Faq
     group: structure
-    icon: 'icon-question-sign'
+    icon: icon-question-sign
     inspector:
       groups:
         page:
@@ -43,16 +42,16 @@
   properties:
     question:
       type: string
-      translatable: TRUE
+      translatable: true
       defaultValue: 'Enter question here'
       ui:
-        inlineEditable: TRUE
+        inlineEditable: true
     answer:
       type: string
-      translatable: TRUE
+      translatable: true
       defaultValue: 'Enter answer here'
       ui:
-        inlineEditable: TRUE
+        inlineEditable: true
     datePublished:
       type: DateTime
       ui:
@@ -62,7 +61,7 @@
     author:
       type: string
       ui:
-        label: 'Author'
+        label: Author
         inspector:
           group: page
     relatedLinks:
