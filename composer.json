@@ -1,18 +1,23 @@
 {
-	"name": "lelesys/plugin-faq",
-	"description": "A faq plugin for TYPO3 Neos",
-	"license": "LGPL-3.0+",
-	"type":"typo3-flow-plugin",
-	"authors": [
-		{
-			"name": "Lelesys Infotech Pvt Ltd, India",
-			"email": "typo3neos@lelesys.com",
-			"homepage": "http://www.lelesys.com"
-		}
-	],
-	"autoload":{
-		"psr-0":{
-			"Lelesys\\Plugin\\Faq":"Classes"
-		}
-	}
+    "name": "lelesys/plugin-faq",
+    "description": "A faq plugin for TYPO3 Neos",
+    "license": "LGPL-3.0+",
+    "type": "typo3-flow-plugin",
+    "authors": [
+        {
+            "name": "Lelesys Infotech Pvt Ltd, India",
+            "email": "typo3neos@lelesys.com",
+            "homepage": "http://www.lelesys.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Lelesys\\Plugin\\Faq": "Classes"
+        }
+    },
+    "extra": {
+        "applied-flow-migrations": [
+            "TYPO3.Neos.NodeTypes-130516220640"
+        ]
+    }
 }
