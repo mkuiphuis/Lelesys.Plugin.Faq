@@ -1,7 +1,6 @@
-
 'Lelesys.Plugin.Faq:Container':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   ui:
     label: 'Faq Container'
     group: structure
@@ -12,7 +11,7 @@
       type: 'TYPO3.Neos:ContentCollection'
 'Lelesys.Plugin.Faq:Category':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   ui:
     label: 'Faq Category'
     group: structure
@@ -28,9 +27,10 @@
   childNodes:
     items:
       type: 'TYPO3.Neos:ContentCollection'
+
 'Lelesys.Plugin.Faq:Question':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   ui:
     label: Faq
     group: structure

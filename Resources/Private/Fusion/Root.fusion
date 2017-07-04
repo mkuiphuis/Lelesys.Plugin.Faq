@@ -1,25 +1,25 @@
-prototype(Lelesys.Plugin.Faq:Container) < prototype(TYPO3.Neos:Content)
+prototype(Lelesys.Plugin.Faq:Container) < prototype(Neos.Neos:Content)
 prototype(Lelesys.Plugin.Faq:Container) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/FaqContainer.html'
 
-	faqContainerItemCollection = TYPO3.Neos:ContentCollection
+	faqContainerItemCollection = Neos.Neos:ContentCollection
 	faqContainerItemCollection {
 		nodePath = 'items'
 	}
 }
 
-prototype(Lelesys.Plugin.Faq:Category) < prototype(TYPO3.Neos:Content)
+prototype(Lelesys.Plugin.Faq:Category) < prototype(Neos.Neos:Content)
 prototype(Lelesys.Plugin.Faq:Category) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/FaqCategory.html'
 	title = ${q(node).property('title')}
 
-	faqCategoryItemCollection = TYPO3.Neos:ContentCollection
+	faqCategoryItemCollection = Neos.Neos:ContentCollection
 	faqCategoryItemCollection {
 		nodePath = 'items'
 	}
 }
 
-prototype(Lelesys.Plugin.Faq:Question) < prototype(TYPO3.Neos:Content)
+prototype(Lelesys.Plugin.Faq:Question) < prototype(Neos.Neos:Content)
 prototype(Lelesys.Plugin.Faq:Question) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/Faq.html'
 	question = ${q(node).property('question')}
